@@ -30,6 +30,7 @@ public class Board : MonoBehaviour
         string boardSize = levelToBuild[0];
         boardWidth = int.Parse(boardSize.Split(',')[0]);
         boardHeight = int.Parse(boardSize.Split(',')[1]);
+        Vector2 offset = new Vector2(-(boardWidth - 1) * 0.5f, -(boardHeight - 1) * 0.5f);
 
         // create the board with prefabs
         board = new GameObject[boardHeight, boardHeight];
@@ -43,18 +44,21 @@ public class Board : MonoBehaviour
                     case '+':
                         GameObject tempFloor = (GameObject)Instantiate(Resources.Load("Prefabs/Floor"));
                         tempFloor.transform.SetParent(this.transform);
+                        tempFloor.transform.position = new Vector3(offset.x + j, offset.y + i, 0.0f);
                         Node floorComponent = (Node)tempFloor.GetComponent("Node");
                         board[i, j] = tempFloor;
                         break;
                     case '#':
                         GameObject tempWall = (GameObject)Instantiate(Resources.Load("Prefabs/Wall"));
                         tempWall.transform.SetParent(this.transform);
+                        tempWall.transform.position = new Vector3(offset.x + j, offset.y + i, 0.0f);
                         Node wallComponent = (Node)tempWall.GetComponent("Node");
                         board[i, j] = tempWall;
                         break;
                     default:
                         GameObject tempNode = (GameObject)Instantiate(Resources.Load("Prefabs/Node"));
                         tempNode.transform.SetParent(this.transform);
+                        tempNode.transform.position = new Vector3(offset.x + j, offset.y + i, 0.0f);
                         Node nodeComponent = (Node)tempNode.GetComponent("Node");
                         nodeComponent.nnrOfTiles = CalculateNumberOfTiles(tileType);
                         board[i, j] = tempNode;
