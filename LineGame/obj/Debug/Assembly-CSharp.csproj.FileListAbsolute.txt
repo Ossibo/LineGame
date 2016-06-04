@@ -19,3 +19,24 @@ C:\Users\Ossibo\Documents\GitHub\LineGame\LineGame\Temp\bin\Debug\UnityEngine.Ne
 C:\Users\Ossibo\Documents\GitHub\LineGame\LineGame\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\Ossibo\Documents\GitHub\LineGame\LineGame\obj\Debug\Assembly-CSharp.dll
 C:\Users\Ossibo\Documents\GitHub\LineGame\LineGame\obj\Debug\Assembly-CSharp.pdb
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\Assembly-CSharp.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\Assembly-CSharp.pdb
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\UnityEditor.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\UnityEngine.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\UnityEngine.Networking.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\UnityEngine.UI.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\Mono.Cecil.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\Unity.SerializationLogic.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\Unity.DataContract.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\Unity.UNetWeaver.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\Unity.CecilTools.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\UnityEngine.xml
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\UnityEditor.xml
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\UnityEngine.UI.xml
+E:\Github Linegame - Local copy\LineGame\LineGame\Temp\bin\Debug\UnityEngine.Networking.xml
+E:\Github Linegame - Local copy\LineGame\LineGame\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+E:\Github Linegame - Local copy\LineGame\LineGame\obj\Debug\Assembly-CSharp.dll
+E:\Github Linegame - Local copy\LineGame\LineGame\obj\Debug\Assembly-CSharp.pdb

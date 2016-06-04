@@ -45,22 +45,28 @@ public class Board : MonoBehaviour
                         GameObject tempFloor = (GameObject)Instantiate(Resources.Load("Prefabs/Floor"));
                         tempFloor.transform.SetParent(this.transform);
                         tempFloor.transform.position = new Vector3(offset.x + j, offset.y + i, 0.0f);
-                        Node floorComponent = (Node)tempFloor.GetComponent("Node");
+                        tempFloor.name = "Floor (" + i + "." + j + ")";
+                        Floor floorComponent = (Floor)tempFloor.GetComponent("Floor");
+                        floorComponent.BoardIndex = new Vector2(j, i);
                         board[i, j] = tempFloor;
                         break;
                     case '#':
                         GameObject tempWall = (GameObject)Instantiate(Resources.Load("Prefabs/Wall"));
                         tempWall.transform.SetParent(this.transform);
                         tempWall.transform.position = new Vector3(offset.x + j, offset.y + i, 0.0f);
-                        Node wallComponent = (Node)tempWall.GetComponent("Node");
+                        tempWall.name = "Wall (" + i + "." + j + ")";
+                        Wall wallComponent = (Wall)tempWall.GetComponent("Wall");
+                        wallComponent.BoardIndex = new Vector2(j, i);
                         board[i, j] = tempWall;
                         break;
                     default:
                         GameObject tempNode = (GameObject)Instantiate(Resources.Load("Prefabs/Node"));
                         tempNode.transform.SetParent(this.transform);
                         tempNode.transform.position = new Vector3(offset.x + j, offset.y + i, 0.0f);
+                        tempNode.name = "Node (" + i + "." + j + ")";
                         Node nodeComponent = (Node)tempNode.GetComponent("Node");
-                        nodeComponent.nnrOfTiles = CalculateNumberOfTiles(tileType);
+                        nodeComponent.nrOfTiles = CalculateNumberOfTiles(tileType);
+                        nodeComponent.BoardIndex = new Vector2(j, i);
                         board[i, j] = tempNode;
                         break;
                 }

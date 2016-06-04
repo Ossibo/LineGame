@@ -21,7 +21,7 @@ public class Menu : MonoBehaviour {
         files = System.IO.Directory.GetFiles(dataPath, "*.txt");
 
         // loads the first level directly to test if it works
-        LoadFromResorces(files[0]);
+        LoadFromResorces(files[1]);
 
         // loads the new scene to test if it works
         LoadToGameScene();

@@ -4,21 +4,23 @@ using System.Collections;
 
 public class Node : Tile {
 
-    public int nnrOfTiles;
-    public Text displayNumber;
+    public int nrOfTiles;
+    private Vector2 displayNrPos;       // Position for the nrOfTiles variable label in OnGUI function
 
 	// Use this for initialization
 	void Start ()
     {
-        displayNumber = GetComponent<Text>();
-        //displayNumber.transform.position = this.transform.position;
-        displayNumber.color = Color.white;
-        displayNumber.text = "" + nnrOfTiles;
+        displayNrPos = Camera.main.WorldToScreenPoint(new Vector3(transform.position.x, transform.position.y)); 
 	}
-
 
 	// Update is called once per frame
 	void Update ()
     {
 	}
+
+    // Updates object's GUI "components" once per frame
+    void OnGUI()
+    {
+        GUI.Label(new Rect(displayNrPos.x, displayNrPos.y, 100, 100), nrOfTiles.ToString());
+    }
 }
